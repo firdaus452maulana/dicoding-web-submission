@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Site</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#aboutMe">About Me</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="jumbotron">
+                <h1>Hey There, I'm Firdaus!</h1>
+                <p>Cloud Computing Trainee at Bangkit Academy 2022 <br> Student at Politeknik Elektronika Negeri Surabaya</p>
+                <a href="#aboutMe">Let You Know About Me</a>
+            </div>
+        </header>
+        <main>
+            <div id="content" class="main-content">
+                <article id="aboutMe" class="card">
+                    <h1 class="article-title">About Me</h1>
+                    <div class="line-rounded"></div>
+                    <div class="container">
+                        <div class="aboutme text">
+                            <h1>Muhammad Firdaus Maulana</h1>
+                            <h2>Cloud Computing Student at Bangkit Academy | Student at Politeknik Elektronika Negeri Surabaya</h2>
+                            <p>My name is Muhammad Firdaus Maulana, Currently a fourth year Computer Engineering student at Politeknik Elektronika Negeri Surabaya (PENS). I interested in Machine Learning and Mobile Apps Development. I enjoy working on a project and work as a team or individual, work under pressure, and always interested in keeping up with the growth of technology.</p>
+                            <div class="btn-group">
+                                <button onclick="goToLinkedin()" id="btnLinkedin">View My Profile on Linkedin <i class="fa fa-linkedin-square"></i> </button>
+                                <button onclick="goToGithub()" id="btnGithub">View My Project on Github <i class="fa fa-github"></i></button>
+                            </div>
+                        </div>
+                        <div class="aboutme img">
+                            <img src="assets/images/aboutme-img.jpg" id="profileImg" alt="photoProfil">
+                        </div>
+                    </div>
+                </article>
+                <article id="projects" class="card">
+                    <h1 class="article-title">Projects</h1>
+                    <div class="line-rounded"></div>
+                    <div class="container-projects">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="card-project">
+                            <img src="assets/images/siap.png" id="projectImg" alt="Project Image">
+                            <section>
+                                <h2>SIAP</h2>
+                                <p>The SIAP application is a Flutter-based android application that functions to report a tool when a malfunction occurs. The way this application works is that the user or employee in the office will report in the SIAP application, then the technician on duty will get a notification when a report comes in and will check the tool.</p>
+                            </section>
+                        </div>
+                        <div class="card-project">
+                            <img src="assets/images/scheeko.jpg" id="projectImg" alt="Project Image">
+                            <section>
+                                <h2>SCHEEKO</h2>
+                                <p>School - Social Distancing Keeper</p>
+                            </section>
+                        </div>
+                        <div class="card-project">
+                            <img src="assets/images/ecds.jpg" id="projectImg" alt="Project Image">
+                            <section>
+                                <h2>ECDS (Early Cataract Detection System)</h2>
+                                <p>Computer Vision-Based Cataract Check Platform</p>
+                            </section>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                      </div>
+                </article>
+                <article id="skills" class="card">
+                    <h1 class="article-title">Skills</h1>
+                    <div class="line-rounded"></div>
+                    <div class="container-skills">
+                        <div class="card-skills">
+                            <img src="assets/images/android.jpg" id="skiilsImg" alt="Android Image">
+                            <div class="layer">
+                                <h2>Android</h2>
+                            </div>
+                        </div>
+                        <div class="card-skills">
+                            <img src="assets/images/machine-learning.png" id="skiilsImg" alt="Android Image">
+                            <div class="layer">
+                                <h2>Machine Learning</h2>
+                            </div>
+                        </div>
+                        <div class="card-skills">
+                            <img src="assets/images/editor.jpg" id="skiilsImg" alt="Android Image">
+                            <div class="layer">
+                                <h2>Editor</h2>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <aside class="aside-content">
+                <article class="card">
+                    <header>
+                        <h1 class="article-title">Biodata</h1>
+                        <div class="line-rounded"></div>
+                    </header>
+                    <section>
+                        <table>
+                            <tbody><tr>
+                                <th>Name</th>
+                                <td>Muhammad Firdaus Maulana</td>
+                            </tr>
+                            <tr>
+                                <th>Born</th>
+                                <td>4 May 2002</td>
+                            </tr>
+                            <tr>
+                                <th>Telephone</th>
+                                <td>(+62) 85211266279</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>Perum Kalirejo Blok A/3 <br> Bangil, Pasuruan</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>firdaus452maulana@gmail.com</td>
+                            </tr>
+                        </tbody></table>
+                    </section>
+                    <div class="contact">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/muhammad-firdaus-maulana/"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="https://github.com/firdaus452maulana"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/firdaus_maulana_/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/firdaus.maulana.92351/"><i class="fa fa-facebook-square"></i></a></li>
+                        </ul>
+                    </div>
+               </article>
+            </aside>
+        </main>
+        <footer>
+            <div id="contact" class="contact">
+                <h1>Contact Me</h1>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/muhammad-firdaus-maulana/"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://github.com/firdaus452maulana"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/firdaus_maulana_/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/firdaus.maulana.92351/"><i class="fa fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
+            <p>Personal Site&#169; 2022, Muhammad Firdaus Maulana</p>
+        </footer>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
